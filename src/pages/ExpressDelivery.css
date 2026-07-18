@@ -1,0 +1,361 @@
+.express-page {
+  padding-bottom: var(--spacing-xl);
+}
+
+.express-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.exp-section {
+  padding: 60px 0;
+}
+
+.exp-section.bg-light {
+  background-color: #f8fafc;
+  border-radius: var(--radius-lg);
+  padding: 60px;
+  margin: 40px 0;
+}
+
+.exp-section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 40px;
+}
+
+/* Promises Grid */
+.exp-promises-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.exp-promise-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s;
+}
+
+.exp-promise-card:hover {
+  transform: translateY(-5px);
+  border-color: #f59e0b;
+}
+
+.exp-icon {
+  width: 80px;
+  height: 80px;
+  background: #fffbeb;
+  color: #f59e0b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.exp-promise-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--color-text-main);
+}
+
+.exp-promise-card p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Tracking Section */
+.exp-tracking-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.exp-tracking-info {
+  flex: 1;
+}
+
+.exp-tracking-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.exp-tracking-info p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.exp-tracking-form {
+  display: flex;
+  gap: 10px;
+}
+
+.exp-tracking-form input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.exp-tracking-form input:focus {
+  border-color: #f59e0b;
+}
+
+.exp-tracking-form button {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 0 30px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.exp-tracking-form button:hover {
+  background: #d97706;
+}
+
+.exp-tracking-display {
+  flex: 1.2;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #e2e8f0;
+}
+
+.exp-map-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.exp-map-placeholder p {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Active Tracking */
+.exp-active-tracking {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-driver-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 10;
+}
+
+.driver-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.exp-driver-info h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.exp-driver-info p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.est-time {
+  margin-left: auto;
+  text-align: right;
+  background: #fffbeb;
+  padding: 10px 15px;
+  border-radius: var(--radius-md);
+  border: 1px solid #fef3c7;
+}
+
+.est-time span {
+  display: block;
+  font-size: 12px;
+  color: #b45309;
+}
+
+.est-time strong {
+  display: block;
+  font-size: 18px;
+  color: #d97706;
+}
+
+.exp-progress-container {
+  padding: 20px;
+  background: white;
+  z-index: 10;
+}
+
+.exp-progress-bar {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: var(--radius-full);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.exp-progress-fill {
+  height: 100%;
+  background: #10b981;
+  transition: width 1s ease-out;
+}
+
+.exp-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.exp-progress-labels .active {
+  color: #10b981;
+}
+
+.exp-map-mockup {
+  flex: 1;
+  background-color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-map-mockup iframe {
+  pointer-events: none; /* Ngăn user kéo map làm lệch marker */
+  filter: saturate(1.2) contrast(1.1); /* Làm bản đồ sặc sỡ hơn chút */
+}
+
+.map-overlay-layer {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pulsing-dot {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  width: 24px;
+  height: 24px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.8);
+  animation: pulse 1.5s infinite;
+  transform: translate(-50%, -50%);
+  border: 3px solid white;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+  70% { box-shadow: 0 0 0 20px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.route-line {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 35%;
+  height: 20%;
+  border-bottom: 4px dashed #3b82f6;
+  border-right: 4px dashed #3b82f6;
+  border-bottom-right-radius: 20px;
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.destination-marker {
+  position: absolute;
+  top: 35%;
+  left: 70%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marker-pin {
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+.marker-pulse {
+  width: 15px;
+  height: 5px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  margin-top: 5px;
+  animation: shadowPulse 1.5s infinite;
+}
+
+@keyframes shadowPulse {
+  0% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.5); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.5; }
+}
+
+/* Packaging grid */
+.exp-packaging-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pkg-item {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.pkg-icon {
+  color: #10b981;
+  margin-bottom: 15px;
+}
+
+.pkg-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.pkg-item p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}

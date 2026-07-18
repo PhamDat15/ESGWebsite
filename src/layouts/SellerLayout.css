@@ -1,0 +1,142 @@
+.seller-layout {
+  display: flex;
+  height: 100vh;
+  background: #f1f5f9;
+  font-family: inherit;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.seller-sidebar {
+  width: 260px;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.seller-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.seller-brand span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.seller-nav {
+  flex: 1;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.s-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.s-nav-item:hover {
+  background: #f8fafc;
+  color: #10b981;
+}
+
+.s-nav-item.active {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.seller-bottom {
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.btn-seller-logout {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 12px 15px;
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: background 0.2s;
+}
+
+.btn-seller-logout:hover {
+  background: #fef2f2;
+}
+
+/* Main Area */
+.seller-main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.seller-header {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.sh-left h2 {
+  font-size: 20px;
+  color: #1e293b;
+}
+
+.sh-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sh-welcome {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.sh-welcome strong {
+  color: #1e293b;
+}
+
+.sh-avatar {
+  width: 40px;
+  height: 40px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.seller-main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}

@@ -1,0 +1,283 @@
+.guarantee-page {
+  padding-bottom: var(--spacing-xl);
+}
+
+.gua-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.gua-section {
+  padding: 60px 0;
+}
+
+.gua-section.bg-light {
+  background-color: #f8fafc;
+  border-radius: var(--radius-lg);
+  padding: 60px;
+  margin: 40px 0;
+}
+
+.gua-section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 40px;
+}
+
+/* Policies Grid */
+.gua-policies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.gua-policy-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gua-policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: #3b82f6;
+}
+
+.gua-icon-wrap {
+  width: 80px;
+  height: 80px;
+  background: #eff6ff;
+  color: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.gua-policy-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--color-text-main);
+}
+
+.gua-policy-card p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Process Steps */
+.gua-process {
+  background: #1e293b;
+  color: white;
+  border-radius: var(--radius-lg);
+  padding: 60px;
+}
+
+.gua-process .gua-section-title {
+  color: white;
+}
+
+.gua-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gua-step {
+  text-align: center;
+  flex: 1;
+}
+
+.gua-step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--color-primary);
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.2);
+}
+
+.gua-step h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.gua-step p {
+  color: #94a3b8;
+}
+
+.gua-step-arrow {
+  color: #475569;
+  flex-shrink: 0;
+  margin: 0 20px;
+}
+
+/* Report Form */
+.gua-report-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.gua-report-info {
+  flex: 1;
+}
+
+.gua-report-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ef4444;
+}
+
+.gua-report-info p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.gua-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 20px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: #991b1b;
+}
+
+.gua-form-container {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+}
+
+.gua-form-group {
+  margin-bottom: 20px;
+}
+
+.gua-form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text-main);
+}
+
+.gua-form-group input,
+.gua-form-group select,
+.gua-form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.gua-form-group input:focus,
+.gua-form-group select:focus,
+.gua-form-group textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.gua-upload-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f8fafc;
+}
+
+.gua-upload-zone:hover {
+  border-color: var(--color-primary);
+  background: #f0fdf4;
+  color: var(--color-primary);
+}
+
+.gua-upload-zone span {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.gua-upload-zone small {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.gua-btn-submit {
+  width: 100%;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.gua-btn-submit:hover {
+  background: var(--color-primary-dark);
+}
+
+.gua-success-msg {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.gua-success-msg h3 {
+  font-size: 24px;
+  color: var(--color-text-main);
+  margin: 20px 0 10px;
+}
+
+.gua-success-msg p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.gua-btn-outline {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: var(--color-text-main);
+  padding: 10px 25px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gua-btn-outline:hover {
+  background: #f1f5f9;
+}

@@ -1,0 +1,435 @@
+.checkout-page {
+  padding-bottom: var(--spacing-2xl);
+}
+
+.checkout-page h1 {
+  font-size: 24px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-xl);
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.checkout-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.checkout-section {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.checkout-section h2 {
+  font-size: 18px;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.radio-label:hover {
+  border-color: var(--color-primary);
+}
+
+.radio-label input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+}
+
+.radio-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+.radio-content .price {
+  color: var(--color-text-muted);
+}
+
+.checkout-summary-card {
+  background: white;
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 100px;
+}
+
+.checkout-summary-card h2 {
+  font-size: 18px;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--spacing-sm);
+}
+
+.summary-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--color-text-main);
+}
+
+.summary-item-name {
+  flex: 1;
+  padding-right: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+/* Voucher Section V2 */
+.voucher-section-v2 {
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 30px;
+}
+
+.voucher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voucher-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-select-voucher {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.selected-voucher-card {
+  margin-top: 15px;
+  background: #f0fdf4;
+  border: 1px dashed var(--color-primary);
+  padding: 12px 15px;
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svc-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.svc-info strong {
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.svc-info span {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.btn-remove-voucher {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.strikethrough-opt {
+  text-decoration: line-through;
+  color: #94a3b8;
+  margin-right: 10px;
+}
+
+/* Voucher Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.voucher-modal {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+.voucher-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.voucher-modal-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.voucher-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.empty-vouchers {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--color-text-muted);
+}
+
+.btn-go-vouchers {
+  margin-top: 15px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.saved-voucher-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-vc-card {
+  display: flex;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.checkout-vc-card.flash .cvc-left { background: #ef4444; }
+.checkout-vc-card.freeship .cvc-left { background: #10b981; }
+.checkout-vc-card.shop .cvc-left { background: #3b82f6; }
+
+.cvc-left {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.cvc-left strong {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.cvc-right {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cvc-right h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.cvc-right p {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.cvc-error {
+  display: block;
+  font-size: 12px;
+  color: #ef4444;
+  margin-top: 5px;
+}
+
+.btn-use-vc {
+  background: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-use-vc:disabled {
+  border-color: #cbd5e1;
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.voucher-section {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.voucher-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.btn-apply {
+  background: var(--color-text-main);
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.summary-totals {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+}
+
+.total-row.discount {
+  color: var(--color-primary);
+}
+
+.total-row.grand-total {
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-sm);
+  border-top: 1px dashed var(--color-border);
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-text-main);
+}
+
+.total-row.grand-total span:last-child {
+  color: var(--color-accent-orange);
+}
+
+.btn-place-order {
+  width: 100%;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: var(--spacing-xl);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-place-order:hover {
+  background: var(--color-primary-hover);
+}
+
+.checkout-empty {
+  text-align: center;
+  padding: 100px 20px;
+  background: white;
+  border-radius: var(--radius-lg);
+}
+
+.btn-return {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  margin-top: var(--spacing-lg);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}

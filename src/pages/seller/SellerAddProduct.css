@@ -1,0 +1,346 @@
+.seller-add-product-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sap-header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sap-header-left h2 {
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.btn-save-product {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+}
+
+.btn-save-product:hover {
+  background: #059669;
+}
+
+/* Layout Main vs Sidebar */
+.sap-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.sap-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.sap-sidebar {
+  width: 280px;
+  position: sticky;
+  top: 30px;
+}
+
+/* Anchor Menu */
+.sap-anchor-menu {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sap-anchor-menu h4 {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sap-anchor-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sap-anchor-menu a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.2s;
+}
+
+.sap-anchor-menu a:hover {
+  color: #10b981;
+}
+
+/* Cards */
+.sap-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  scroll-margin-top: 30px;
+}
+
+.sap-card h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Grid Form */
+.sap-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input, .form-group select {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  background: white;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #10b981;
+}
+
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-md);
+  padding: 40px;
+  text-align: center;
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.upload-box:hover {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.upload-box p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.upload-box span {
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* Card 2: Auto fill */
+.bg-disabled {
+  background: #f8fafc;
+}
+
+.sap-card-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.sap-card-header-flex h3 {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.badge-auto {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sap-note {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.sap-auto-fill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+}
+
+.sap-auto-fill-grid div {
+  font-size: 14px;
+  color: #334155;
+}
+
+.sap-auto-fill-grid strong {
+  color: #64748b;
+  display: inline-block;
+  width: 130px;
+}
+
+/* Card 3: Certs */
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cert-checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cert-checkbox-wrapper:hover {
+  border-color: #10b981;
+}
+
+.cert-checkbox-wrapper input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #10b981;
+  margin-top: 2px;
+}
+
+.cert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cert-content strong {
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.cert-content span {
+  font-size: 13px;
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.mt-20 { margin-top: 20px; }
+.mt-10 { margin-top: 10px; }
+
+/* Card 4: Diary Table */
+.sap-diary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sap-diary-table th {
+  text-align: left;
+  padding: 12px 10px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+}
+
+.sap-diary-table td {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.sap-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  outline: none;
+}
+
+.sap-input:focus {
+  border-color: #10b981;
+}
+
+.btn-add-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px dashed #cbd5e1;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add-row:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}

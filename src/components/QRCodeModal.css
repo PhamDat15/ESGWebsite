@@ -1,0 +1,108 @@
+.qr-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  backdrop-filter: blur(4px);
+}
+
+.qr-modal-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: modalPopIn 0.3s ease-out;
+}
+
+@keyframes modalPopIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.qr-modal-content h2 {
+  font-size: 20px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.qr-amount {
+  font-size: 16px;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-lg);
+}
+
+.qr-amount span {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-accent-orange);
+  display: block;
+  margin-top: 4px;
+}
+
+.qr-code-wrapper {
+  background: var(--color-bg-body);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  margin: 0 auto var(--spacing-lg);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.qr-code-wrapper:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--spacing-md);
+  display: block;
+}
+
+.qr-instruction p {
+  font-size: 14px;
+  color: var(--color-text-main);
+  margin-bottom: 4px;
+}
+
+.qr-hint {
+  font-size: 12px !important;
+  color: var(--color-primary) !important;
+  font-weight: 500;
+}
+
+.qr-timer {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-cancel-qr {
+  background: white;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel-qr:hover {
+  background: #f3f4f6;
+  color: var(--color-text-main);
+}

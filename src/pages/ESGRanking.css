@@ -1,0 +1,339 @@
+.esg-page {
+  padding-bottom: var(--spacing-xl);
+}
+
+.esg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.esg-section {
+  padding: 60px 0;
+}
+
+.esg-section.bg-light {
+  background-color: #f8fafc;
+  border-radius: var(--radius-lg);
+  padding: 60px 40px;
+  margin: 40px 0;
+}
+
+.esg-section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.esg-section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+}
+
+/* Intro Grid */
+.esg-intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.esg-intro-content p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.esg-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esg-pillar {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s;
+}
+
+.esg-pillar:hover {
+  transform: translateX(10px);
+}
+
+.esg-p-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.e-icon { background: #10b981; }
+.s-icon { background: #3b82f6; }
+.g-icon { background: #8b5cf6; }
+
+.esg-p-text h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--color-text-main);
+}
+
+.esg-p-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Intro Visual: ESG Circles Animation */
+.esg-intro-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.esg-circle-wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  animation: rotateWrap 20s linear infinite;
+}
+
+.esg-circle {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.esg-circle.main {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  z-index: 10;
+  animation: rotateCounter 20s linear infinite; /* Keeps text upright */
+}
+
+.esg-circle.sub {
+  width: 80px;
+  height: 80px;
+  animation: rotateCounter 20s linear infinite;
+}
+
+.esg-circle.sub.e {
+  background: #10b981;
+  top: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.esg-circle.sub.s {
+  background: #3b82f6;
+  bottom: 15%;
+  left: 5%;
+}
+
+.esg-circle.sub.g {
+  background: #8b5cf6;
+  bottom: 15%;
+  right: 5%;
+}
+
+@keyframes rotateWrap {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateCounter {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(0, 0) rotate(-360deg); }
+}
+.esg-circle.main {
+  /* Override for main circle which uses translate(-50%, -50%) */
+  animation: rotateCounterMain 20s linear infinite;
+}
+@keyframes rotateCounterMain {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+
+/* Leaderboard */
+.esg-leaderboard {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.esg-l-header {
+  display: flex;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.esg-l-row {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.esg-l-row:last-child {
+  border-bottom: none;
+}
+
+.esg-l-row:hover {
+  background: #f8fafc;
+}
+
+.esg-l-row.top-1 {
+  background: #fffbeb;
+}
+.esg-l-row.top-1:hover {
+  background: #fef3c7;
+}
+
+.col-rank {
+  width: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.col-name {
+  flex: 2;
+}
+
+.col-name h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--color-text-main);
+}
+
+.col-name p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.col-scores {
+  flex: 1.5;
+  display: flex;
+  gap: 10px;
+}
+
+.score-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.score-pill.env { background: #d1fae5; color: #047857; }
+.score-pill.soc { background: #dbeafe; color: #1d4ed8; }
+.score-pill.gov { background: #ede9fe; color: #6d28d9; }
+
+.col-total {
+  width: 120px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-score-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
+}
+
+.top-1 .total-score-badge {
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3);
+}
+
+/* CTA */
+.esg-cta {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: var(--radius-lg);
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+  margin-top: 40px;
+}
+
+.esg-cta h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.esg-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.esg-btn-primary {
+  background: white;
+  color: #059669;
+  border: none;
+  padding: 15px 30px;
+  border-radius: var(--radius-full);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
+}
+
+.esg-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+}

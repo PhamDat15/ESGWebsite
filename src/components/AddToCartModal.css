@@ -1,0 +1,160 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  /* The cubic-bezier gives a slight arc/bounce feel during the flight */
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-origin: center center;
+  overflow: hidden;
+}
+
+.modal-content.animating {
+  /* Hides inner borders / shadows when transforming into a drop */
+  background: var(--color-primary);
+}
+
+.modal-content.animating .modal-inner {
+  opacity: 0;
+}
+
+.modal-inner {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  transition: opacity 0.3s;
+}
+
+.modal-img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.modal-info h3 {
+  font-size: 16px;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-xs);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.modal-price {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.quantity-controls button {
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--color-text-main);
+  transition: background 0.2s;
+}
+
+.quantity-controls button:hover {
+  background: var(--color-bg-body);
+}
+
+.quantity-controls span {
+  width: 40px;
+  text-align: center;
+  font-weight: 500;
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  line-height: 32px;
+}
+
+.modal-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.total-price {
+  color: var(--color-accent-orange);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.btn-cancel, .btn-add {
+  flex: 1;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: var(--color-bg-body);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-main);
+}
+
+.btn-cancel:hover {
+  background: #f3f4f6;
+}
+
+.btn-add {
+  background: var(--color-primary);
+  color: white;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-add:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn-buy-now {
+  background: var(--color-secondary) !important;
+  border-color: var(--color-secondary) !important;
+}
+
+.btn-buy-now:hover {
+  background: var(--color-secondary-hover) !important;
+}

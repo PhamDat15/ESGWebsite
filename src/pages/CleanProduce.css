@@ -1,0 +1,232 @@
+.clean-produce-page {
+  padding-bottom: var(--spacing-xl);
+}
+
+.cp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.cp-section {
+  padding: 60px 0;
+}
+
+.cp-section.bg-light {
+  background-color: #f8fafc;
+  border-radius: var(--radius-lg);
+  padding: 60px 40px;
+  margin: 40px 0;
+}
+
+.cp-section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 40px;
+}
+
+.cp-section-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-text-muted);
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+
+/* Standards Grid */
+.cp-standards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.cp-standard-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.cp-standard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.cp-icon {
+  width: 70px;
+  height: 70px;
+  background: #f0fdf4;
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.cp-standard-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-text-main);
+}
+
+.cp-standard-card p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Traceability Section */
+.cp-trace-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cp-trace-form {
+  background: white;
+  padding: 10px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 40px;
+}
+
+.cp-input-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.cp-input-wrap input {
+  flex: 1;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: var(--radius-full);
+  outline: none;
+}
+
+.cp-btn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0 30px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.cp-btn:hover {
+  background: var(--color-primary-dark);
+}
+
+.cp-trace-result {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e2e8f0;
+}
+
+.cp-trace-result h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--color-text-main);
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 15px;
+}
+
+.cp-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cp-timeline-item {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.cp-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: -30px;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+.cp-timeline-item:last-child::before {
+  display: none;
+}
+
+.cp-t-icon {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  z-index: 1;
+}
+
+.cp-timeline-item.success .cp-t-icon {
+  background: var(--color-primary);
+  color: white;
+}
+
+.cp-t-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--color-text-main);
+}
+
+.cp-t-content p {
+  color: var(--color-text-muted);
+}
+
+.cp-status {
+  font-weight: 600;
+  color: var(--color-primary) !important;
+}
+
+/* Certificates Grid */
+.cp-certs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.cp-cert-card {
+  text-align: center;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: var(--radius-lg);
+  border: 1px solid #e2e8f0;
+}
+
+.cert-icon {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.cp-cert-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cp-cert-card p {
+  color: var(--color-text-muted);
+}

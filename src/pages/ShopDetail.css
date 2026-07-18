@@ -1,0 +1,257 @@
+.shop-detail-page {
+  padding-top: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.shop-banner {
+  position: relative;
+  height: 350px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.shop-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop-banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-xl);
+  color: white;
+}
+
+.shop-banner-info h1 {
+  font-size: 32px;
+  margin-bottom: var(--spacing-sm);
+  color: white;
+}
+
+.shop-banner-stats {
+  display: flex;
+  gap: var(--spacing-xl);
+  font-size: 15px;
+  align-items: center;
+}
+
+.shop-banner-stats span {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.shop-products-section h2 {
+  font-size: 24px;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-sm);
+  display: inline-block;
+}
+
+.shop-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+/* Tabs & Reviews */
+.shop-content-section {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.shop-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 30px;
+}
+
+.shop-tab {
+  background: transparent;
+  border: none;
+  padding: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.shop-tab:hover {
+  color: var(--color-primary-dark);
+}
+
+.shop-tab.active {
+  color: var(--color-primary-dark);
+}
+
+.shop-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 3px 3px 0 0;
+}
+
+/* Reviews Styling */
+.reviews-summary {
+  display: flex;
+  gap: 40px;
+  background: #f8fafc;
+  padding: 20px 30px;
+  border-radius: var(--radius-md);
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.rs-score h2 {
+  font-size: 36px;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.rs-score p {
+  margin: 5px 0 0 0;
+  color: #64748b;
+}
+
+.rs-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rs-filter {
+  background: white;
+  border: 1px solid #cbd5e1;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rs-filter.active {
+  background: #f0fdf4;
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+
+.review-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #475569;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-user {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.review-date {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.review-stars {
+  margin: 5px 0 10px 0;
+}
+
+.review-text {
+  color: #334155;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.review-like-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.review-like-btn:hover {
+  color: var(--color-primary);
+}
+
+/* Hiệu ứng Hết hàng (Out of Stock) */
+.product-card.out-of-stock {
+  opacity: 0.6;
+  filter: grayscale(80%);
+  cursor: not-allowed;
+  position: relative;
+}
+
+.product-card.out-of-stock::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.badge-out-of-stock {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ef4444;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.4);
+}
+
+@media (max-width: 768px) {
+  .shop-banner-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  .shop-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

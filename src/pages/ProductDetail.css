@@ -503,9 +503,6 @@
   color: var(--color-text-main);
 }
 
-  margin-bottom: var(--spacing-xs);
-}
-
 .reviews-summary {
   display: flex;
   align-items: center;

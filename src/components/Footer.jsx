@@ -16,7 +16,7 @@ const Footer = () => {
           </p>
           <div className="social-links">
             <a href="https://www.facebook.com/dieu.tran.471299" className="social-icon" style={{ fontWeight: 'bold', fontSize: '14px', textDecoration: 'none' }}>FB</a>
-            <a href="https://www.instagram.com/_dieutrann1310_?fbclid=IwY2xjawTH49dleHRuA2FlbQIxMABicmlkETFFeURTVVBqbTBmVlE1SzF5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHuipy2PU1Lm00JC2Ino0b0S45ShS780ZVCphFX8olJivsmOT41rNv0L_FTh6_aem_HkTAMe5sntI60pSeV3EQ9Q" className="social-icon" style={{ fontWeight: 'bold', fontSize: '14px', textDecoration: 'none' }}>IG</a>
+            <a href="https://www.instagram.com/neymarjr/" className="social-icon" style={{ fontWeight: 'bold', fontSize: '14px', textDecoration: 'none' }}>IG</a>
             <a href="#" className="social-icon" style={{ fontWeight: 'bold', fontSize: '14px', textDecoration: 'none' }}>X</a>
           </div>
         </div>
